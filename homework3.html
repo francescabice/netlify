@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunflower</title>
+  </head>
+  <style>
+    .flower {
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      background-image: linear-gradient(
+        179.5deg,
+        rgb(255, 230, 69) 3.3%,
+        rgb(255, 157, 73) 96%
+      );
+      border-radius: 20px;
+      color: #fffdeb;
+      width: 50%;
+      padding: 30px;
+      margin: 30px auto;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    h1 {
+      text-align: center;
+      border: #fffdeb solid 1px;
+      padding: 8px;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+    }
+    p {
+      line-height: 1.2;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 70%;
+      border-radius: 10px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      background: rgb(235, 125, 15);
+      color: #fffdeb;
+      border: #fffee8 solid 1px;
+      border-radius: 25px;
+      font-size: 17px;
+      padding: 15px 18px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 250ms ease;
+    }
+    button:hover {
+      cursor: pointer;
+      opacity: 2;
+      background: #fbd790;
+    }
+    .visit {
+      color: #ff9a3c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .visit:hover {
+      text-decoration: underline;
+    }
+    .production {
+      display: block;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .production:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-decoration: underline;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="flower">
+      <h1>Sunflower 🌻</h1>
+
+      <h2>
+        The
+        <em><span style="color: #ff9a3c"> Summer</span></em>
+        Flower
+      </h2>
+      <hr />
+      <p>
+        Nothing says summer like a brightly blooming
+        <strong>Sunflower.</strong> Often considered a weed in a farmer's field,
+        many homeowners find joy filling their landscape and gardens with these
+        majestic giants. The colorful, sunny blooms elevate a garden display and
+        double as a snack for you and your garden wildlife. Once a common crop
+        among Native American tribes, sunflowers are now grown for their
+        ornamental and commercial value. Certain kinds of sunflowers are grown
+        as food (for both humans and animals), seeds, and oil.
+      </p>
+      <a
+        href="https://extension.illinois.edu/blogs/flowers-fruits-and-frass/2022-08-12-sunflowers-symbolize-summer-elevate-garden-displays-and"
+        target="_blank"
+        class="visit"
+      >
+        Visit our Website
+      </a>
+      <hr />
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/709/original/133601.jpg?1708097157"
+        alt="SUNFLOWER"
+      />
+      <br />
+      <br />
+
+      <button class="btn">Grow any Sunflowers in your Country? 😉</button>
+      <br />
+      <br />
+
+      <a
+        href="https://www.atlasbig.com/images/en/countries-sunflower-production.png"
+        target="_blank"
+        class="production"
+      >
+        visit the map</a
+      >
+      <br />
+
+      <p class="footer">This page was made by Franci</p>
+    </div>
+  </body>
+  <script>
+    function where() {
+      let name = prompt(" What is your name?");
+      let country = prompt("Where are you from?");
+      if (
+        country == "Greenland" ||
+        country == "Iceland" ||
+        country == "Africa"
+      ) {
+        alert("I'm sorry, " + name + " in your country grow not Sunflowers ☹");
+      } else {
+        alert(" Hey " + name + " in your country grow Sunflowers 😊");
+      }
+    }
+    let wherebutton = document.querySelector(".btn");
+    wherebutton.addEventListener("click", where);
+  </script>
+</html>
